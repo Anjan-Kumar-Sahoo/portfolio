@@ -1,7 +1,6 @@
 export interface SkillType {
   name: string;
-  level: number;
-  icon?: string;
+  backgroundUrl: string;
 }
 
 export interface ProjectType {
