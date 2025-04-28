@@ -21,10 +21,7 @@ const TechnicalSkills: React.FC = () => {
           className="text-center max-w-3xl mx-auto mb-12"
         >
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I specialize in Java development with a strong foundation in Spring Boot and Angular.
-            My technical repertoire spans across various languages, frameworks, and tools that enable
-            me to build robust, scalable applications.
-          </p>
+          I specialize in Java development with strong skills in Spring Boot and Angular, and I am experienced in building robust, scalable applications using a variety of tools and technologies.          </p>
         </motion.div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
