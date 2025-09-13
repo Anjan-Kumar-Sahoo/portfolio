@@ -1,3 +1,10 @@
+export interface TrainingType {
+  title: string;
+  organization: string;
+  duration: string;
+  points: string[];
+  certificate?: string | null;
+}
 export interface SkillType {
   name: string;
   backgroundUrl: string;
@@ -7,6 +14,8 @@ export interface ProjectType {
   title: string;
   description: string;
   technologies: string[];
+  github?: string;
+  live?: string;
 }
 
 export interface InternshipType {
