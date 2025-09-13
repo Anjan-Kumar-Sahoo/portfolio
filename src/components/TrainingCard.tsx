@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { TrainingType } from '../types';
 
 interface TrainingCardProps {
@@ -7,7 +8,14 @@ interface TrainingCardProps {
 
 const TrainingCard: React.FC<TrainingCardProps> = ({ training }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col h-full">
+    <motion.div
+      initial={{ opacity: 0, y: 30, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, type: 'spring' }}
+      className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col h-full"
+      whileHover={{ scale: 1.03, boxShadow: '0 8px 32px rgba(0,0,0,0.12)' }}
+    >
       <div className="flex items-center justify-between mb-2">
         <h3 className="text-lg font-bold text-gray-800 dark:text-white">
           {training.title}
@@ -40,7 +48,7 @@ const TrainingCard: React.FC<TrainingCardProps> = ({ training }) => {
           <li key={idx}>{point}</li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
