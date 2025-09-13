@@ -11,7 +11,7 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ 
   skill, 
   index,
-  variant = 'technical'
+  // variant = 'technical'
 }) => {
   return (
     <motion.div
