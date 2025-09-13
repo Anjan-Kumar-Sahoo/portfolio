@@ -13,7 +13,7 @@ const TrainingCard: React.FC<TrainingCardProps> = ({ training }) => {
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, type: 'spring' }}
-      className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col h-full"
+      className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col h-full border-2 border-transparent hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300"
       whileHover={{ scale: 1.03, boxShadow: '0 8px 32px rgba(0,0,0,0.12)' }}
     >
       <div className="flex items-center justify-between mb-2">

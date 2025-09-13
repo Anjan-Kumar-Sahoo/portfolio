@@ -19,7 +19,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden flex flex-col justify-between"
+      className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden flex flex-col justify-between border-2 border-transparent hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300"
+      whileHover={{ scale: 1.03, boxShadow: '0 8px 32px rgba(0,0,0,0.12)' }}
     >
       <div className="p-6 flex flex-col h-full">
         <div className="flex items-center justify-between mb-3">

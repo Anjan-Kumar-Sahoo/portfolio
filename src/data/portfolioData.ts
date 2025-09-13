@@ -21,7 +21,7 @@ export const technicalSkills: SkillType[] = [
   { name: "Postman", backgroundUrl: "https://www.postman.com/_ar-assets/images/postman-api-platform-social-preview-9420276277ad8d4e67e53ee548409999.jpg" },
   { name: "React", backgroundUrl: "https://miro.medium.com/v2/resize:fit:1400/1*MF5V_dkybUTcfzwHFh0VSw.jpeg" },
   { name: "JavaScript", backgroundUrl: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fryjtqvr29xjynue53o0o.jpg" },
-  { name: "HTML/CSS", backgroundUrl: "https://wellcreator.com/blog/wp-content/uploads/2022/02/html-css-750x375.jpg" },
+  { name: "HTML+CSS", backgroundUrl: "https://wellcreator.com/blog/wp-content/uploads/2022/02/html-css-750x375.jpg" },
   { name: "C++", backgroundUrl: "https://media.licdn.com/dms/image/v2/C5612AQFbHPw4gOrSyg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1544386832292?e=2147483647&v=beta&t=0dL7w7H8WWdVfFjqyZIL83y54fjoR4mIyBC5kc_pcHk" },
   { name: "MySQL", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT21QLILKsh-EOuzfl2Hpek1Z91tDkKusNL8w&s" },
   { name: "MongoDB", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8tDqWuNdv2HpKkd-LQ1o0M4r0fguN2kB1Pw&s" },
