@@ -5,7 +5,7 @@ export const userData = {
   profession: "Java Developer",
   bio: "Passionate Java developer with proficiency in Spring Boot and Angular. I enjoy building scalable web applications and solving complex problems through efficient code.",
   resumeUrl: "https://drive.google.com/file/d/1LUh3fsjBEPIl8SDdmiThoHHE4GoddBY0/view?usp=sharing",
-  image: "image1.jpg",
+  image: "img2.jpg",
   email: "askmraks@gmail.com",
   github: "https://github.com/Anjan-Kumar-Sahoo",
   linkedin: "https://linkedin.com/in/aks1097",
