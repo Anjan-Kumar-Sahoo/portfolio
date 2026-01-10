@@ -33,19 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-3 py-1 bg-gray-900 text-white text-xs rounded hover:bg-gray-700 transition"
-              >
-                GitHub
-              </a>
-            )}
-            {project.live && (
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition"
               >
-                Live
+                GitHub
               </a>
             )}
           </div>

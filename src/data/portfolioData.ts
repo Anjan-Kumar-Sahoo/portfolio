@@ -4,7 +4,7 @@ export const userData = {
   name: "Anjan Kumar Sahoo",
   profession: "Java Developer",
   bio: "Passionate Java developer with proficiency in Spring Boot and Angular. I enjoy building scalable web applications and solving complex problems through efficient code.",
-  resumeUrl: "https://drive.google.com/file/d/1LUh3fsjBEPIl8SDdmiThoHHE4GoddBY0/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1umXdxP4ENo7n398aG0j6sYe6pU54jP5z/view?usp=sharing",
   image: "img3.jpg",
   email: "askmraks@gmail.com",
   github: "https://github.com/Anjan-Kumar-Sahoo",
@@ -38,6 +38,12 @@ export const softSkills: SkillType[] = [
 
 
 export const projects: ProjectType[] = [
+  {
+    title: "Garage Management & Billing System",
+    description: "Developed full-stack web app managing customers, vehicles, services, invoicing, payments, and job cards with real-time analytics dashboard. Built RESTful backend with Spring Boot and JPA, exposing 40+ API endpoints with Swagger documentation for seamless CRUD operations and data management. Engineered invoice generation with automatic calculations, payment tracking, and job card management linking mechanics and vehicles with status updates. Designed responsive React frontend with Tailwind CSS featuring dark/light themes, real-time search, inline editing, and dynamic forms.",
+    technologies: ["Spring Boot", "React", "MySQL", "JPA", "REST API", "Tailwind CSS", "Swagger", "Maven", "Java 21"],
+    github: "https://github.com/Anjan-Kumar-Sahoo/Garage-Management-Billing-Systems",
+  },
   {
     title: "Inventory Management System",
     description: "Built a full-stack web app to efficiently manage suppliers, products, inventory, and track sales transactions. Developed backend services with Spring Boot, JPA, and MySQL exposing REST APIs for smooth data handling. Designed React frontend to display suppliers, products, and their relationships dynamically in real time. Added a sell function to automatically update stock levels, ensuring accurate inventory after every transaction. Optimized API handling and resolved cyclic dependencies, improving data consistency and query execution performance.",
