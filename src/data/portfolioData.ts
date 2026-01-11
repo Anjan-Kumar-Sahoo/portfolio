@@ -109,14 +109,14 @@ export const education: EducationType[] = [
     institution: "Lovely Professional University (LPU)",
     degree: "B.Tech in Computer Science Engineering",
     duration: "2022 - 2026",
-    score: "CGPA: 7.30",
+    score: "CGPA: 7.45",
     imageUrl: "https://graduatesdaily.com/wp-content/uploads/2024/05/Lovely-Professional-University-Punjab.jpg",
   },
   {
     institution: "St. Paul's School",
     degree: "12th & 10th",
     duration: "2008 - 2022",
-    score: "12th: 72% ;  10th: 82%",
+    score: "12th: 71% ;  10th: 82%",
     imageUrl: "https://skoodos.com/public/uploads/optimized/1651746437.png",
   },
 ];
