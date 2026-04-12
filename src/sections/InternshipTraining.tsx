@@ -17,7 +17,7 @@ const InternshipTraining: React.FC = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="trainings" className="section-padding relative overflow-hidden dark:bg-gray-900 bg-gray-50 py-24" ref={ref}>
+    <section id="trainings" className="section-padding relative overflow-hidden bg-[#030614] py-24" ref={ref}>
       {/* Header */}
       <motion.div
         className="text-center mb-16"
@@ -31,7 +31,7 @@ const InternshipTraining: React.FC = () => {
         >
           My Journey
         </span>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-white">
           Training <span className="neon-text">Timeline</span>
         </h2>
         <p className="max-w-lg mx-auto" style={{ color: 'var(--text-secondary)' }}>
@@ -71,12 +71,12 @@ const InternshipTraining: React.FC = () => {
                   {year} • {item.organization}
                 </span>
                 <h3
-                  className="font-heading text-lg font-semibold mt-2 mb-2 dark:text-white text-gray-800"
+                  className="font-heading text-lg font-semibold mt-2 mb-2 text-white"
                 >
                   {item.title}
                 </h3>
                 <p
-                  className="text-sm leading-relaxed mb-3 text-gray-600 dark:text-gray-400"
+                  className="text-sm leading-relaxed mb-3 text-gray-400"
                 >
                   {item.points.join(' ')}
                 </p>
@@ -107,7 +107,7 @@ const InternshipTraining: React.FC = () => {
                   whileHover={{ scale: 1.3 }}
                 >
                   <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center bg-white dark:bg-gray-800 shadow-md"
+                    className="w-8 h-8 rounded-full flex items-center justify-center bg-gray-900 shadow-md"
                     style={{
                       border: `2px solid ${color}`,
                       boxShadow: `0 0 15px ${color}40`,
@@ -137,7 +137,7 @@ const InternshipTraining: React.FC = () => {
                   </motion.a>
                 ) : (
                   <motion.div
-                    className="glass rounded-xl p-6 text-center flex flex-col h-full cursor-default bg-white/50 dark:bg-gray-800/50"
+                    className="glass rounded-xl p-6 text-center flex flex-col h-full cursor-default bg-white/5 border border-white/10"
                     whileHover={{
                       scale: 1.02,
                       boxShadow: `0 0 30px ${color}15`,

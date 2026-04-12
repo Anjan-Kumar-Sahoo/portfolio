@@ -51,7 +51,7 @@ const Home: React.FC = () => {
             className="relative mb-10"
           >
             <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 blur-2xl opacity-20 animate-pulse" />
-            <div className="w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-white/20 p-2 glass relative z-10 overflow-hidden group">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-white/20 p-2 glass relative z-10 overflow-hidden group flex-shrink-0">
               <motion.img 
                 src={userData.image} 
                 alt={userData.name} 
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl font-medium tracking-[0.4em] text-cyan-400 uppercase"
+              className="text-base md:text-xl font-medium tracking-[0.4em] text-cyan-400 uppercase"
             >
               Hi, I'm {userData.name}
             </motion.h2>
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-5xl md:text-8xl font-black tracking-tighter text-white"
+              className="text-4xl md:text-8xl font-black tracking-tighter text-white"
             >
               Software <span className="neon-text">Engineer</span>
             </motion.h1>
@@ -84,7 +84,7 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed"
+              className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed px-4"
             >
               Building robust, scalable backends and intelligent full-stack systems.
             </motion.p>

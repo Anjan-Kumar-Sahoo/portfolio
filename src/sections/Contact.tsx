@@ -31,14 +31,20 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-800">
-      <div className="container mx-auto px-4">
-        <SectionTitle 
-          title="Contact Me" 
-          subtitle="Let's connect and discuss how we can work together"
-        />
+    <section id="contact" className="py-24 bg-[#050816] relative overflow-hidden">
+      {/* Background Accent */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-cyan-500/5 blur-[120px] pointer-events-none" />
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <span className="text-sm font-medium tracking-[0.4em] text-cyan-400 uppercase mb-4 block">Let's Connect</span>
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-6">Get In <span className="neon-text">Touch</span></h2>
+          <p className="max-w-2xl mx-auto text-gray-400 text-lg">
+            I'm always open to new opportunities, collaborations, or just a friendly chat about technology.
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -46,36 +52,31 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
-              Get In Touch
+            <h3 className="text-2xl font-bold text-white mb-8">
+              Contact Information
             </h3>
             
-            <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              I'm always open to new opportunities, collaborations, or just a friendly chat about technology.
-              Feel free to reach out through any of the channels below or send me a message using the form.
-            </p>
-            
-            <div className="space-y-6">
+            <div className="space-y-8">
               {contactLinks.map((link, index) => (
                 <motion.a
                   key={index}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center group"
+                  className="flex items-center group glass p-4 rounded-2xl border border-white/5 hover:border-white/20 transition-all"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                 >
-                  <div className={`p-3 rounded-full mr-4 ${link.color}`}>
+                  <div className={`p-4 rounded-xl mr-5 flex-shrink-0 bg-white/5 group-hover:bg-white/10 transition-colors ${link.color.split(' ').filter(c => c.includes('text')).join(' ')}`}>
                     {link.icon}
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    <h4 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">
                       {link.label}
                     </h4>
-                    <p className="text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <p className="text-white text-lg font-medium group-hover:text-cyan-400 transition-colors">
                       {link.value}
                     </p>
                   </div>
@@ -91,7 +92,9 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <ContactForm />
+            <div className="glass p-8 rounded-3xl border border-white/10">
+              <ContactForm />
+            </div>
           </motion.div>
         </div>
       </div>
