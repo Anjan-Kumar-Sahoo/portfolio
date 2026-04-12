@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
             className="flex items-center cursor-pointer group"
           >
             <span className="text-2xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform">
-              {userData.name.split(' ')[0]}<span className="text-white">.</span>
+              Mr. Aks<span className="text-white">.</span>
             </span>
           </Link>
 
