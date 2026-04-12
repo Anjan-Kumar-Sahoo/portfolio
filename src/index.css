@@ -56,3 +56,52 @@ html {
 body {
   @apply antialiased;
 }
+
+:root {
+  --neon-blue: #00d4ff;
+  --neon-purple: #a855f7;
+  --neon-cyan: #22d3ee;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dark .glass-strong {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.neon-text {
+  background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body {
+  cursor: none;
+}
+
+a, button, [role="button"], input, textarea, select {
+  cursor: none !important;
+}

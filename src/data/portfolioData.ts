@@ -2,9 +2,9 @@ import { SkillType, ProjectType, EducationType } from '../types';
 
 export const userData = {
   name: "Anjan Kumar Sahoo",
-  profession: "Java Developer",
-  bio: "Passionate Java developer with proficiency in Spring Boot and Angular. I enjoy building scalable web applications and solving complex problems through efficient code.",
-  resumeUrl: "https://drive.google.com/file/d/1IZg6TCsraULZ0E59vtXOJRlzP9DNexAD/view?usp=sharing",
+  profession: "Software Engineer",
+  bio: "Software Engineer specializing in scalable Spring Boot microservices and RESTful APIs. Passionate about writing clean code, optimizing performance, and solving complex problems with 250+ LeetCode milestones.",
+  resumeUrl: "https://drive.google.com/file/d/1us7sFzQe7N1bvQxdZAPh-WxzX17iBr6K/view?usp=sharing",
   image: "img3.jpg",
   email: "askmraks@gmail.com",
   github: "https://github.com/Anjan-Kumar-Sahoo",
@@ -12,21 +12,22 @@ export const userData = {
 };
 
 export const technicalSkills: SkillType[] = [
-  { name: "Java", backgroundUrl: "https://img2.wallspic.com/previews/8/0/3/3/6/163308/163308-java-graphic_design-logo-text-graphics-550x310.jpg" },
-  { name: "Spring Boot", backgroundUrl: "https://cdn.prod.website-files.com/622642781cd7e96ac1f66807/676217e30d0d80d17b203f32_BLOG-SpringBoot%402x.png" },
-  { name: "Spring Security", backgroundUrl: "https://media.licdn.com/dms/image/v2/D4D12AQE007MhfHxo8w/article-cover_image-shrink_720_1280/B4DZWT6tRhG8AI-/0/1741943396442?e=2147483647&v=beta&t=KiNVcR0iNUo4dK4kFag--JiSPL8tD7BPzLvHB5WtYXQ" },
-  { name: "Git+GitHub", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CSlu9qcKt1pBmHgesvuDwEyfEdvdwnDSRA&s" },
-  { name: "Python", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvm8puJRD2pSCSrgB9kje9gxsfbwCDj5tQfQ&s" },
-  { name: "Django", backgroundUrl: "https://www.devopsschool.com/blog/wp-content/uploads/2022/02/DjangoFeaturedImage.jpeg" },
-  { name: "Postman", backgroundUrl: "https://www.postman.com/_ar-assets/images/postman-api-platform-social-preview-9420276277ad8d4e67e53ee548409999.jpg" },
-  { name: "React", backgroundUrl: "https://miro.medium.com/v2/resize:fit:1400/1*MF5V_dkybUTcfzwHFh0VSw.jpeg" },
-  { name: "JavaScript", backgroundUrl: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fryjtqvr29xjynue53o0o.jpg" },
-  { name: "HTML+CSS", backgroundUrl: "https://wellcreator.com/blog/wp-content/uploads/2022/02/html-css-750x375.jpg" },
-  { name: "C++", backgroundUrl: "https://media.licdn.com/dms/image/v2/C5612AQFbHPw4gOrSyg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1544386832292?e=2147483647&v=beta&t=0dL7w7H8WWdVfFjqyZIL83y54fjoR4mIyBC5kc_pcHk" },
-  { name: "MySQL", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT21QLILKsh-EOuzfl2Hpek1Z91tDkKusNL8w&s" },
-  { name: "MongoDB", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8tDqWuNdv2HpKkd-LQ1o0M4r0fguN2kB1Pw&s" },
-  { name: "Windows", backgroundUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUos1au9_2Dcz8d3IvnjX0bmBDs0juMaRGwg&s" },
-  { name: "Malware Analysis", backgroundUrl: "https://virtualcyberlabs.com/wp-content/uploads/2024/12/Blog-Thumbnails-8-1.png" },
+  { name: "Java", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+  { name: "Spring Framework", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" },
+  { name: "Microservices", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" },
+  { name: "React + Redux", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "TypeScript", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+  { name: "Docker", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+  { name: "AWS EC2", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  { name: "MySQL", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+  { name: "PostgreSQL", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "MongoDB", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Redis & RabbitMQ", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" },
+  { name: "Git+GitHub / CI/CD", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+  { name: "Postman", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+  { name: "Python", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "C++ & Core CS", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+  { name: "HTML5/CSS3", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
 ];
 export const softSkills: SkillType[] = [
   { name: "Communication", backgroundUrl: "https://thumbs.dreamstime.com/b/corporate-communication-group-people-flat-vector-illustration-ratio-depicting-diverse-business-engaged-conversation-298179904.jpg" },
@@ -39,66 +40,65 @@ export const softSkills: SkillType[] = [
 
 export const projects: ProjectType[] = [
   {
-    title: "Garage Management & Billing System",
-    description: "Developed full-stack web app managing customers, vehicles, services, invoicing, payments, and job cards with real-time analytics dashboard. Built RESTful backend with Spring Boot and JPA, exposing 40+ API endpoints with Swagger documentation for seamless CRUD operations and data management. Engineered invoice generation with automatic calculations, payment tracking, and job card management linking mechanics and vehicles with status updates. Designed responsive React frontend with Tailwind CSS featuring dark/light themes, real-time search, inline editing, and dynamic forms.",
-    technologies: ["Spring Boot", "React", "MySQL", "JPA", "REST API", "Tailwind CSS", "Swagger", "Maven", "Java 21"],
-    github: "https://github.com/Anjan-Kumar-Sahoo/Garage-Management-Billing-Systems",
+    title: "SkillSync \u2013 Peer-to-Peer \u2013 Learning Platform",
+    description: "Architected a production-grade platform with 9 Spring Boot microservices on AWS EC2 and a React 18 + TypeScript frontend on Vercel. Enabled role-based dashboards for Learner, Mentor, and Admin supporting mentor discovery and session workflows. Designed RESTful APIs across User, Auth, Payment, Session, and Notification services. Implemented CQRS with Redis caching and event-driven architecture using RabbitMQ for asynchronous workflows. Secured platform using JWT, OAuth, and OTP authentication.",
+    technologies: ["Spring Boot 3", "Microservices", "React", "TypeScript", "Redux", "MySQL", "Redis", "RabbitMQ", "Docker", "AWS EC2", "Vercel"],
+    github: "https://github.com/Anjan-Kumar-Sahoo/SkillSync",
+    live: "https://skillsync.mraks.dev"
   },
   {
     title: "Inventory Management System",
-    description: "Built a full-stack web app to efficiently manage suppliers, products, inventory, and track sales transactions. Developed backend services with Spring Boot, JPA, and MySQL exposing REST APIs for smooth data handling. Designed React frontend to display suppliers, products, and their relationships dynamically in real time. Added a sell function to automatically update stock levels, ensuring accurate inventory after every transaction. Optimized API handling and resolved cyclic dependencies, improving data consistency and query execution performance.",
+    description: "Engineered a full-stack inventory platform enabling real-time stock tracking, supplier management, and seamless sales workflow. Designed RESTful APIs connecting frontend and backend for products, suppliers, orders, and transactions. Implemented automated sell logic updating stock levels and calculating profit and revenue dynamically. Built an interactive dashboard with charts and forms for inventory updates, sales handling, and insights. Enforced data validation rules preventing inconsistent states across entities.",
     technologies: ["Spring Boot", "React", "MySQL", "JPA", "REST API"],
-  github: "https://github.com/Anjan-Kumar-Sahoo/Inventory-Management",
-  live: "https://inventorymanagement.mraks.me"
+    github: "https://github.com/Anjan-Kumar-Sahoo/Inventory-Management"
   },
   {
-    title: "Carbon Footprint Tracker",
-    description: "Developed a full-stack web app enabling users to calculate, track, and forecast commute-based carbon emissions. Created secure authentication with registration, login/logout, and profile management using Django’s auth framework. Engineered commute tracking with dynamic vehicle selection and ML-powered CO2 emission predictions using Scikit-learn. Designed dashboards with Matplotlib charts allowing users to visualize and compare their carbon footprint effectively. Streamlined data storage using SQLite for development and PostgreSQL for production to scale user commute data. Integrated responsive Bootstrap UI to enhance usability, accessibility, and engagement across desktop and mobile devices.",
-    technologies: ["Django", "Python", "SQLite", "Scikit-learn", "Bootstrap", "Matplotlib"],
-  github: "https://github.com/Anjan-Kumar-Sahoo/Carbon-Footprint-Tracker",
-  live: "https://carbontracker.mraks.me"
+    title: "Garage Management System",
+    description: "Developed an end-to-end garage management platform handling customers, vehicles, services, invoices, and payments. Architected REST API layer supporting vehicle servicing and billing operations. Integrated Spring Security authentication with protected endpoints and session management. Designed an analytics dashboard showing revenue trends, customer insights, and operational metrics. Implemented invoice payment lifecycle supporting multiple payment modes and automatic status updates.",
+    technologies: ["Spring Boot", "React", "MySQL", "Spring Data JPA", "Spring Security", "REST API"],
+    github: "https://github.com/Anjan-Kumar-Sahoo/GarageMS",
   },
 ];
 
 // internships removed
 export const trainings: import('../types').TrainingType[] = [
   {
-    title: "Python Full Stack Training",
+    title: "Java Backend Development",
+    organization: "Hitbullseye",
+    duration: "Jan 2025",
+    points: [
+      "Designed REST APIs and integrated MySQL using microservices concepts and enterprise-grade CRUD architecture.",
+      "Acquired practical knowledge of Java backend designing and integration of databases in structured apps."
+    ],
+    certificate: null
+  },
+  {
+    title: "Python Full Stack Development",
     organization: "CipherSchools",
     duration: "Jun 2025",
     points: [
-      "Gained hands-on expertise in Python Full Stack, building Django apps with dynamic UI and database support.",
+      "Built end-to-end Django applications integrating databases, user authentication, and responsive UI components.",
       "Applied Python frameworks to construct web apps, integrating databases and responsive interface components."
     ],
     certificate: "https://cipher-other-assets.s3.ap-south-1.amazonaws.com/certificates/TC_aksahoo1097%40gmail.com_CS2025-14504"
   },
   {
-    title: "Competitive Programming Training",
-    organization: "Programing Pathshala",
+    title: "Competitive Programming",
+    organization: "Programming Pathshala",
     duration: "Mar 2025",
     points: [
-      "Enhanced problem-solving and algorithmic thinking through rigorous coding challenges and competitive exercises.",
+      "Strengthened algorithmic thinking and debugging through structured challenges and optimised solution design.",
       "Refined debugging and logical reasoning, optimizing performance in complex programming tasks and contests."
     ],
     certificate: null
   },
   {
-    title: "Java Backend Development",
-    organization: "Hitbullseye",
-    duration: "Jan 2025",
-    points: [
-      "Acquired practical knowledge of Java backend, designing REST APIs and integrating databases in structured apps.",
-      "Implemented backend solutions using microservices architecture, MySQL databases, and CRUD operations efficiently."
-    ],
-    certificate: null
-  },
-  {
-    title: "Logic Building & Programming Training",
-    organization: "SkillDev LPU",
+    title: "Logic Building & DSA with Java",
+    organization: "SkillDev, LPU",
     duration: "Aug 2024",
     points: [
-      "Strengthened analytical problem-solving using Java and DSA concepts with focus on optimized algorithms.",
-      "Adopted advanced coding strategies to deliver solutions that improve performance and streamline logic."
+      "Mastered DSA in Java with focus on time/space complexity and optimised implementations.",
+      "Strengthened analytical problem-solving using Java and DSA concepts with focus on optimized algorithms."
     ],
     certificate: "https://files.lpu.in/umsweb/skilldevcourse/SkillDevelopmentCertificates/12216014_459_08_15_2024.pdf?_gl=1*t43zh3*_gcl_au*Nzg0ODE0OTgyLjE3NTI1NzMxNjUuNzkzMDk1OTU5LjE3NTI1NzMxNzcuMTc1MjU3MzIzMw.."
   }
@@ -106,17 +106,17 @@ export const trainings: import('../types').TrainingType[] = [
 
 export const education: EducationType[] = [
   {
-    institution: "Lovely Professional University (LPU)",
-    degree: "B.Tech in Computer Science Engineering",
-    duration: "2022 - 2026",
-    score: "CGPA: 7.45",
+    institution: "Lovely Professional University",
+    degree: "B.Tech \u2014 Computer Science & Engineering",
+    duration: "Aug 2022 \u2014 Present",
+    score: "CGPA: 7.5",
     imageUrl: "https://graduatesdaily.com/wp-content/uploads/2024/05/Lovely-Professional-University-Punjab.jpg",
   },
   {
     institution: "St. Paul's School",
-    degree: "12th & 10th",
-    duration: "2008 - 2022",
-    score: "12th: 71% ;  10th: 82%",
+    degree: "Intermediate (I.S.C) & Matriculation (I.C.S.E)",
+    duration: "May 2022 & May 2020",
+    score: "12th: 72% ; 10th: 82%",
     imageUrl: "https://skoodos.com/public/uploads/optimized/1651746437.png",
   },
 ];

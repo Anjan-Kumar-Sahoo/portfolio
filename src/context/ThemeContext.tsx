@@ -23,8 +23,7 @@ interface ThemeProviderProps {
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   // Check if user has a theme preference in localStorage
   const [theme, setTheme] = useState<ThemeMode>(() => {
-    const savedTheme = localStorage.getItem('theme') as ThemeMode;
-    return savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    return 'dark';
   });
 
   // Update the HTML class when theme changes
