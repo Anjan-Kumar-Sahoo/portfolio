@@ -51,7 +51,7 @@ const Home: React.FC = () => {
             className="relative mb-10"
           >
             <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 blur-2xl opacity-20 animate-pulse" />
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-white/20 p-2 glass relative z-10 overflow-hidden group flex-shrink-0">
+            <div className="w-[160px] h-[160px] md:w-[250px] md:h-[250px] rounded-full border-2 border-white/20 p-2 glass relative z-10 overflow-hidden group flex-shrink-0">
               <motion.img 
                 src={userData.image} 
                 alt={userData.name} 

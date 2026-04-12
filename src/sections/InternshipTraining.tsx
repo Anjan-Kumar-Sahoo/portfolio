@@ -107,13 +107,13 @@ const InternshipTraining: React.FC = () => {
                   whileHover={{ scale: 1.3 }}
                 >
                   <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center bg-gray-900 shadow-md"
+                    className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-900 shadow-md"
                     style={{
                       border: `2px solid ${color}`,
                       boxShadow: `0 0 15px ${color}40`,
                     }}
                   >
-                    <Icon className="w-4 h-4" style={{ color: color }} />
+                    <Icon className="w-5 h-5" style={{ color: color }} />
                   </div>
                 </motion.div>
 
