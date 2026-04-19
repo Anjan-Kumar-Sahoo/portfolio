@@ -4,7 +4,7 @@ export const userData = {
   name: "Anjan Kumar Sahoo",
   profession: "Software Engineer",
   bio: "Software Engineer specializing in scalable Spring Boot microservices and RESTful APIs. Passionate about writing clean code, optimizing performance, and solving complex problems with 250+ LeetCode milestones.",
-  resumeUrl: "https://drive.google.com/file/d/1vaJqPzATORphG-wPwdYD92V1OCCrEtqy/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1tHcqKDcxUBka_Ptl6Fz7_4M4-LNYDtYG/view?usp=sharing",
   image: "img3.jpg",
   email: "askmraks@gmail.com",
   github: "https://github.com/Anjan-Kumar-Sahoo",
@@ -47,10 +47,11 @@ export const projects: ProjectType[] = [
     live: "https://skillsync.mraks.dev"
   },
   {
-    title: "Inventory Management System",
-    description: "Engineered a full-stack inventory platform enabling real-time stock tracking, supplier management, and seamless sales workflow. Designed RESTful APIs connecting frontend and backend for products, suppliers, orders, and transactions. Implemented automated sell logic updating stock levels and calculating profit and revenue dynamically. Built an interactive dashboard with charts and forms for inventory updates, sales handling, and insights. Enforced data validation rules preventing inconsistent states across entities.",
-    technologies: ["Spring Boot", "React", "MySQL", "JPA", "REST API"],
-    github: "https://github.com/Anjan-Kumar-Sahoo/Inventory-Management"
+    title: "Godamm – Inventory Command Center",
+    description: "Architected a multi-tenant inventory management platform with a Spring Boot backend and React 18 + TypeScript frontend deployed on AWS EC2 + Vercel, ensuring scalability. Designed and implemented 23+ RESTful APIs for product catalogue, supplier management, sales processing, and user authentication using Spring Boot Bean Validation at every endpoint. Followed RESTful conventions ensuring consistent, predictable API contracts across all modules. Delivered real-time stock tracking and atomic sales transaction processing using Spring Data JPA + MySQL, preventing inventory race conditions under concurrent requests. Integrated Redis caching on high-frequency read paths (product listings, dashboard KPIs) to reduce database query pressure. Built a React analytics dashboard with interactive profit charts, low-stock alert indicators, and full CRUD management interfaces for products and suppliers, improving operational visibility and reducing manual inventory reporting overhead. Secured the platform with JWT stateless authentication, BCrypt password hashing, and OTP-based account registration and password recovery. Automated deployments using Docker Compose, Nginx reverse proxy, and GitHub Actions CI/CD for zero-downtime, reproducible production releases.",
+    technologies: ["Spring Boot", "React 18", "TypeScript", "MySQL", "Redis", "Docker", "AWS EC2", "Vercel"],
+    github: "https://github.com/Anjan-Kumar-Sahoo/Inventory-Management",
+    live: "https://godamm.mraks.dev"
   },
   {
     title: "Garage Management System",
@@ -116,7 +117,7 @@ export const education: EducationType[] = [
     institution: "St. Paul's School",
     degree: "Intermediate (I.S.C) & Matriculation (I.C.S.E)",
     duration: "May 2022 & May 2020",
-    score: "12th: 72% ; 10th: 82%",
+    score: "12th: 71% ; 10th: 82%",
     imageUrl: "https://skoodos.com/public/uploads/optimized/1651746437.png",
   },
 ];
