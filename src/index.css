@@ -97,11 +97,4 @@ body {
   background-clip: text;
   color: transparent;
 }
-
-body {
-  cursor: none;
-}
-
-a, button, [role="button"], input, textarea, select {
-  cursor: none !important;
-}
+

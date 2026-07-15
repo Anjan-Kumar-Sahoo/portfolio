@@ -9,7 +9,6 @@ import SoftSkills from './sections/SoftSkills';
 import Education from './sections/Education';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -26,7 +25,6 @@ function App() {
           className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 z-[60] origin-left"
           style={{ scaleX }}
         />
-        <CustomCursor />
         <Navbar />
         <main className="relative">
           {/* Global Background Decorations */}

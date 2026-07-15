@@ -1,230 +1,159 @@
-# Personal Portfolio
+# 👨‍💻 Anjan Kumar Sahoo - Portfolio
 
-A modern, responsive personal portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases my projects, skills, education, and professional experience with a sleek dark/light theme toggle.
+A premium, interactive, and responsive developer portfolio website built with **React 18**, **TypeScript**, and **Tailwind CSS**, powered by **Vite** for lightning-fast speeds and **Framer Motion** for state-of-the-art animations. 
 
-## 🌟 Features
+This website showcases my professional background as a Software Engineer, emphasizing my expertise in building scalable Spring Boot microservices, high-performance RESTful APIs, and robust front-end user interfaces.
 
-- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
-- **Dark/Light Theme**: Toggle between dark and light modes with smooth transitions
-- **Smooth Scrolling**: Elegant section navigation with react-scroll
-- **Interactive Animations**: Powered by Framer Motion for smooth, eye-catching animations
-- **Contact Form**: Integrated with EmailJS for direct messaging
-- **Modern UI**: Built with Tailwind CSS for a clean, professional look
-- **Type-Safe**: Fully typed with TypeScript for better development experience
+---
 
-## 🚀 Live Demo
+## 🌟 Live Demos & Quick Links
 
-Check out the live portfolio: [Portfolio Website](https://yourportfolio.com)
+- **Portfolio URL**: [portfolio.mraks.dev](https://github.com/Anjan-Kumar-Sahoo/portfolio) *(Deploy link / local repository)*
+- **LinkedIn Profile**: [linkedin.com/in/aks1097](https://linkedin.com/in/aks1097)
+- **GitHub Profile**: [github.com/Anjan-Kumar-Sahoo](https://github.com/Anjan-Kumar-Sahoo)
+- **Email Contact**: [askmraks@gmail.com](mailto:askmraks@gmail.com)
+- **Resume**: [Download / View Resume](https://drive.google.com/file/d/1tHcqKDcxUBka_Ptl6Fz7_4M4-LNYDtYG/view?usp=sharing)
 
-## 📸 Screenshots
+---
 
-### Light Mode
-![Light Mode](screenshots/light-mode.png)
+## 📸 Interactive Showcase & Design Features
 
-### Dark Mode
-![Dark Mode](screenshots/dark-mode.png)
+- **🌓 Sleek Dark & Light Mode**: Seamless transition between dark and light themes with state persistence (ThemeContext & LocalStorage) and automatic system theme detection.
+- **✨ Micro-Animations**: Smooth, premium scroll animations, floating particles, card hover effects, and fade-ins powered by **Framer Motion**.
+- **📱 Fluid Responsiveness**: Designed using a mobile-first approach with Tailwind CSS grid & flex layouts, featuring a custom responsive navbar.
+- **✉️ Direct Message Delivery**: Live contact form powered by **EmailJS** for instant, client-side email transmission with validation.
+- **📊 Interactive Project Cards**: Dynamic project showcasing featuring GitHub repositories, description tooltips, and live deployment links.
 
-## 🛠️ Built With
+---
 
-- **Frontend Framework**: [React](https://react.dev/) 18.2.0
-- **Language**: [TypeScript](https://www.typescriptlang.org/) 5.3.3
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) 3.4.1
-- **Build Tool**: [Vite](https://vitejs.dev/) 6.3.3
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) 10.16.4
-- **Icons**: [Lucide React](https://lucide.dev/) 0.344.0
-- **Email Service**: [EmailJS](https://www.emailjs.com/) 4.1.0
-- **Smooth Scrolling**: [React Scroll](https://github.com/fisshy/react-scroll) 1.8.9
+## 🛠️ Tech Stack & Dependencies
 
-## 📁 Project Structure
+### Core Architecture
+- **Framework**: React 18.2.0
+- **Build Tool**: Vite 6.3.3
+- **Language**: TypeScript 5.3.3
+- **Styling**: Tailwind CSS 3.4.1 (with PostCSS & Autoprefixer)
 
-```
+### Packages & Libraries
+- **Animations**: Framer Motion 10.16.4
+- **Icons**: Lucide React 0.344.0 & React Icons 5.6.0
+- **Form Utility**: EmailJS Browser 4.1.0
+- **Navigation**: React Scroll 1.8.9 for smooth page offsets
+
+---
+
+## 🚀 Projects Showcased
+
+### 1. SkillSync – Peer-to-Peer Learning Platform
+*Architected a production-grade peer-to-peer mentoring platform.*
+- **Backend Architecture**: Designed and orchestrated 9 Spring Boot microservices deployed on AWS EC2.
+- **Frontend Layer**: Built role-based dashboards (Learner, Mentor, Admin) using React 18 and Redux Toolkit.
+- **Data & Workflows**: Implemented CQRS pattern, Redis query caching, and RabbitMQ asynchronous messaging.
+- **Security**: Secured API gateways and endpoints with stateless JWTs, OAuth2, and OTP verification.
+- **Links**: [GitHub Repository](https://github.com/Anjan-Kumar-Sahoo/SkillSync) | [Live Demo](https://skillsync.mraks.dev)
+
+### 2. Godamm – Inventory Command Center
+*A multi-tenant inventory control system optimized for concurrent traffic.*
+- **API Engine**: Built 23+ RESTful APIs with strict validation, running on Spring Boot and Spring Data JPA.
+- **Database Optimization**: Developed atomic transaction processing on MySQL with Redis caching on high-frequency read paths to prevent race conditions.
+- **Analytics Dashboard**: Custom analytics board rendering profit charts, low-stock notifications, and inventory CRUD interfaces.
+- **DevOps & CI/CD**: Automated deployment flows using Docker Compose, Nginx reverse proxy, and GitHub Actions.
+- **Links**: [GitHub Repository](https://github.com/Anjan-Kumar-Sahoo/Inventory-Management) | [Live Demo](https://godamm.mraks.dev)
+
+### 3. Garage Management System
+*End-to-end platform handling invoices, vehicle service queues, and operational trends.*
+- **Features**: Customer service tracking, invoice generation with payment status workflows, and interactive metrics dashboards.
+- **Tech Stack**: Spring Boot, React, MySQL, Spring Data JPA, Spring Security.
+- **Links**: [GitHub Repository](https://github.com/Anjan-Kumar-Sahoo/GarageMS)
+
+---
+
+## 📋 Skill Set Profile
+
+### 💻 Technical Competencies
+- **Languages**: Java, TypeScript, JavaScript, Python, C++
+- **Frameworks & Libraries**: Spring Framework, Spring Boot, React, Redux Toolkit, Angular, Next.js, Django
+- **Databases & Caches**: MySQL, PostgreSQL, MongoDB, Redis
+- **DevOps & Infrastructure**: Docker, AWS (EC2, S3), GitHub Actions, Nginx, Linux
+- **Tools & Methods**: RabbitMQ, REST APIs, microservices architecture, Git, Postman, Jest
+
+### 🧠 Soft Skills & Achievements
+- **Analytical Prowess**: Over 250+ LeetCode milestones resolved with optimized data structure and algorithm architectures.
+- **Interpersonal & Team Competencies**: Problem Solving, Teamwork, Technical Leadership, Effective Communication, and agile Scrum collaboration.
+
+---
+
+## 📁 Repository Structure
+
+```text
 portfolio/
-├── public/
-│   └── netlify.toml          # Netlify deployment configuration
+├── public/                     # Static assets (portraits, icons, netlify.toml)
 ├── src/
-│   ├── components/           # Reusable UI components
-│   │   ├── ContactForm.tsx
-│   │   ├── EducationCard.tsx
-│   │   ├── Footer.tsx
-│   │   ├── InternshipCard.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── ProjectCard.tsx
-│   │   ├── SectionTitle.tsx
-│   │   └── SkillCard.tsx
-│   ├── context/              # React Context for theme management
-│   │   └── ThemeContext.tsx
-│   ├── data/                 # Portfolio data and content
-│   │   └── portfolioData.ts
-│   ├── sections/             # Main page sections
-│   │   ├── Contact.tsx
-│   │   ├── Education.tsx
-│   │   ├── Home.tsx
-│   │   ├── InternshipTraining.tsx
-│   │   ├── Projects.tsx
-│   │   ├── SoftSkills.tsx
-│   │   └── TechnicalSkills.tsx
-│   ├── types/                # TypeScript type definitions
-│   │   └── index.ts
-│   ├── App.tsx               # Main application component
-│   ├── main.tsx              # Application entry point
-│   └── index.css             # Global styles
-├── eslint.config.js          # ESLint configuration
-├── index.html                # HTML entry point
-├── package.json              # Dependencies and scripts
-├── postcss.config.js         # PostCSS configuration
-├── tailwind.config.js        # Tailwind CSS configuration
-├── tsconfig.json             # TypeScript configuration
-├── vite.config.ts            # Vite configuration
-└── README.md                 # Project documentation
+│   ├── components/             # Reusable UI elements (Navbar, Footer, ContactForm, etc.)
+│   ├── context/                # Theme management state provider
+│   ├── data/                   # Centralized portfolio content database (portfolioData.ts)
+│   ├── sections/               # Modular landing page sections (Home, TechnicalSkills, Projects, etc.)
+│   ├── types/                  # Global TypeScript typings
+│   ├── App.tsx                 # Core component tree and styling layout
+│   ├── main.tsx                # Client-side render target & React entrypoint
+│   └── index.css               # Design tokens, variables, & Tailwind base layers
+├── eslint.config.js            # Linter rules
+├── tailwind.config.js          # Tailwind theme parameters
+├── tsconfig.json               # TypeScript compiler config
+└── vite.config.ts              # Vite configurations
 ```
 
-## 🚀 Getting Started
+---
+
+## 🚀 Getting Started & Local Setup
+
+Follow these steps to run the portfolio website on your local development environment.
 
 ### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) (v18.0.0 or higher) and [npm](https://www.npmjs.com/) installed.
 
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
+### 1. Clone the Codebase
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Anjan-Kumar-Sahoo/portfolio.git
 cd portfolio
 ```
 
-2. Install dependencies
+### 2. Install Dependencies
 ```bash
 npm install
 ```
 
-3. Set up environment variables (if using EmailJS)
-```bash
-# Create a .env file in the root directory
-# Add your EmailJS credentials
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
+### 3. Configure Environment Variables
+To get the contact form working, create a `.env` file in the root directory:
+```env
+VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
 ```
 
-4. Start the development server
+### 4. Fire Up the Dev Server
 ```bash
 npm run dev
 ```
-
-5. Open [http://localhost:5173](http://localhost:5173) in your browser
-
-## 📜 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint for code quality
-
-## 🎨 Customization
-
-### Update Personal Information
-
-Edit the `src/data/portfolioData.ts` file to update:
-- Personal details (name, profession, bio)
-- Projects
-- Skills (technical and soft)
-- Education
-- Internships and trainings
-- Contact information
-
-### Modify Theme Colors
-
-Update Tailwind configuration in `tailwind.config.js` to customize colors and styling.
-
-### Add New Sections
-
-1. Create a new component in `src/sections/`
-2. Import and add it to `App.tsx`
-3. Update navigation in `src/components/Navbar.tsx`
-
-## 🌐 Deployment
-
-### Deploy to Netlify
-
-This project includes a `netlify.toml` configuration file for easy deployment:
-
-1. Push your code to GitHub
-2. Connect your repository to [Netlify](https://www.netlify.com/)
-3. Netlify will automatically detect the build settings
-4. Your site will be live!
-
-### Deploy to Vercel
-
-```bash
-npm install -g vercel
-vercel
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The production-ready files will be in the `dist` directory.
-
-## 📱 Sections
-
-- **Home**: Introduction and hero section
-- **Internships & Training**: Professional experiences and certifications
-- **Projects**: Portfolio of development projects with live demos
-- **Technical Skills**: Programming languages, frameworks, and tools
-- **Soft Skills**: Professional competencies and personal strengths
-- **Education**: Academic background
-- **Contact**: Get in touch via contact form
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! 
-
-Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
-
-Feel free to check the [issues page](https://github.com/Anjan-Kumar-Sahoo/portfolio/issues).
-
-## 📝 License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Anjan Kumar Sahoo**
-
-- GitHub: [@Anjan-Kumar-Sahoo](https://github.com/Anjan-Kumar-Sahoo)
-- LinkedIn: [@aks1097](https://linkedin.com/in/aks1097)
-- Email: askmraks@gmail.com
-
-## ⭐ Show Your Support
-
-Give a ⭐️ if you like this project!
-
-## 📸 Features Showcase
-
-### Responsive Navigation
-- Smooth scrolling navigation
-- Mobile-friendly hamburger menu
-- Active section highlighting
-
-### Theme Toggle
-- Persistent theme preference
-- Smooth color transitions
-- System preference detection
-
-### Interactive Components
-- Animated skill cards with hover effects
-- Project cards with live demo links
-- Working contact form with validation
-
-### Performance Optimized
-- Fast page loads with Vite
-- Optimized images and assets
-- Code splitting for better performance
+The application will launch locally. Open [http://localhost:5173](http://localhost:5173) in your web browser.
 
 ---
 
-Made with ❤️ by Anjan Kumar Sahoo
+## ⚙️ Available npm Scripts
+
+- `npm run dev`: Starts the local development environment using Vite.
+- `npm run build`: Compiles and optimizes assets into production bundles in the `dist/` directory.
+- `npm run preview`: Locally previews the production build in a Node environment.
+- `npm run lint`: Analyzes workspace code style and errors using ESLint.
+
+---
+
+## 🤝 Contribution & License
+
+Contributions, issues, and feature requests are welcome! Feel free to raise issues in the [Issues tab](https://github.com/Anjan-Kumar-Sahoo/portfolio/issues).
+
+Distributed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+*Made with ❤️ by [Anjan Kumar Sahoo](https://github.com/Anjan-Kumar-Sahoo)*

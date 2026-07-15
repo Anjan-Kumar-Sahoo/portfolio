@@ -113,7 +113,7 @@ const Home: React.FC = () => {
             <div className="flex items-center gap-4">
                {[
                  { icon: <Github size={22} />, link: userData.github },
-                 { icon: <Linkedin size={22} />, link: "https://linkedin.com/in/you" },
+                 { icon: <Linkedin size={22} />, link: userData.linkedin },
                  { icon: <Mail size={22} />, link: `mailto:${userData.email}` }
                ].map((social, i) => (
                  <motion.a
