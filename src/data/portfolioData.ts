@@ -4,7 +4,7 @@ export const userData = {
   name: "Anjan Kumar Sahoo",
   profession: "Software Engineer",
   bio: "Software Engineer specializing in scalable Spring Boot microservices and RESTful APIs. Passionate about writing clean code, optimizing performance, and solving complex problems with 250+ LeetCode milestones.",
-  resumeUrl: "https://drive.google.com/file/d/10kFJ35VxIrZJ2kFlHbr-fwWmuGSIr0rf/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/11Ur9L2CGHGH9K0NHzPQ7Q9SnHXHxo6co/view?usp=sharing",
   image: "img3.jpg",
   email: "askmraks@gmail.com",
   github: "https://github.com/Anjan-Kumar-Sahoo",
@@ -111,7 +111,7 @@ export const education: EducationType[] = [
     institution: "Lovely Professional University",
     degree: "B.Tech \u2014 Computer Science & Engineering",
     duration: "Aug 2022 \u2014 Present",
-    score: "CGPA: 7.5",
+    score: "CGPA: 7.66",
     imageUrl: "https://graduatesdaily.com/wp-content/uploads/2024/05/Lovely-Professional-University-Punjab.jpg",
   },
   {
