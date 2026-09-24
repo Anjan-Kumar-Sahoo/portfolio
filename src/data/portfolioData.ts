@@ -110,14 +110,14 @@ export const education: EducationType[] = [
   {
     institution: "Lovely Professional University",
     degree: "B.Tech \u2014 Computer Science & Engineering",
-    duration: "Aug 2022 \u2014 Present",
+    duration: "2022 \u2014 2026",
     score: "CGPA: 7.66",
     imageUrl: "https://graduatesdaily.com/wp-content/uploads/2024/05/Lovely-Professional-University-Punjab.jpg",
   },
   {
     institution: "St. Paul's School",
     degree: "Intermediate (I.S.C) & Matriculation (I.C.S.E)",
-    duration: "May 2022 & May 2020",
+    duration: "2020 \u2014 2022",
     score: "12th: 71% ; 10th: 82%",
     imageUrl: "https://skoodos.com/public/uploads/optimized/1651746437.png",
   },
