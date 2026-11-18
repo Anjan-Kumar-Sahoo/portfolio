@@ -2,8 +2,8 @@ import { SkillType, ProjectType, EducationType } from '../types';
 
 export const userData = {
   name: "Anjan Kumar Sahoo",
-  profession: "Software Engineer",
-  bio: "Software Engineer specializing in scalable Spring Boot microservices and RESTful APIs. Passionate about writing clean code, optimizing performance, and solving complex problems with 250+ LeetCode milestones.",
+  profession: "Ai Full Stack Developer",
+  bio: "Ai Full Stack Developer and Software Engineer specializing in scalable microservices, intelligent full-stack systems, zero-knowledge architectures, and LLM integrations. Passionate about writing clean code, high-throughput APIs, and solving complex problems with 250+ LeetCode milestones.",
   resumeUrl: "https://drive.google.com/file/d/11Ur9L2CGHGH9K0NHzPQ7Q9SnHXHxo6co/view?usp=sharing",
   image: "img3.jpg",
   email: "askmraks@gmail.com",
@@ -16,8 +16,13 @@ export const technicalSkills: SkillType[] = [
   { name: "Spring Framework", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" },
   { name: "Microservices", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" },
   { name: "React + Redux", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-  { name: "Angular", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" },
+  { name: "Node.js & Express", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
   { name: "TypeScript", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+  { name: "Python", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "Claude AI", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anthropic/anthropic-original.svg" },
+  { name: "GitHub Copilot", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcopilot/githubcopilot-original.svg" },
+  { name: "Codex & LLMs", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openai/openai-original.svg" },
+  { name: "FreeLLM & GenAI", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" },
   { name: "Docker", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
   { name: "AWS EC2", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
   { name: "MySQL", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
@@ -26,7 +31,7 @@ export const technicalSkills: SkillType[] = [
   { name: "Redis & RabbitMQ", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" },
   { name: "Git+GitHub / CI/CD", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
   { name: "Postman", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
-  { name: "Python", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "Angular", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" },
   { name: "C++ & Core CS", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
   { name: "HTML5/CSS3", backgroundUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
 ];
@@ -40,6 +45,32 @@ export const softSkills: SkillType[] = [
 
 
 export const projects: ProjectType[] = [
+  {
+    title: "Secure Save \u2013 Personal Vault",
+    description: "Architected a production-grade, zero-knowledge security platform featuring client-side AES-256-GCM encryption, a stateless Node.js serverless API on Vercel, MongoDB Atlas encrypted document storage, a React 18 3D interactive WebApp, and automated Capacitor Android CI/CD. Implemented client-side AES-256-GCM authenticated encryption with 96-bit initialization vectors (IVs) and PBKDF2 (SHA-256) local key derivation; ciphertext-only transport guarantees the backend and database persist zero plaintext secrets. Designed a high-throughput serverless REST API on Vercel Edge with reverse proxy trust, strict CORS firewall whitelisting, express-rate-limit brute-force mitigation, and Nodemailer SMTP delivery with 5-minute MongoDB TTL auto-purging OTP challenges. Built an automated GitHub Actions CI/CD matrix compiling native Android debug APKs with Gradle 8, auto-publishing rolling release assets via softprops/action-gh-release, and syncing static builds across Capacitor and Vercel edge networks.",
+    technologies: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "React 18",
+      "Vite",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Capacitor 6",
+      "Android Keystore",
+      "MongoDB Atlas",
+      "AES-256-GCM",
+      "Vercel Serverless",
+      "GitHub Actions",
+      "Nodemailer"
+    ],
+    github: "https://github.com/Anjan-Kumar-Sahoo/Secure-Save",
+    live: "https://securesave.mraks.dev",
+    extraLinks: [
+      { label: "Docs", url: "https://securesave.mraks.dev/docs" },
+      { label: "Download APK", url: "https://github.com/Anjan-Kumar-Sahoo/Secure-Save/releases/download/latest/securesave.apk" }
+    ]
+  },
   {
     title: "SkillSync \u2013 Peer-to-Peer \u2013 Learning Platform",
     description: "Architected a production-grade platform with 9 Spring Boot microservices on AWS EC2 and a React 18 + TypeScript frontend on Vercel. Enabled role-based dashboards for Learner, Mentor, and Admin supporting mentor discovery and session workflows. Designed RESTful APIs across User, Auth, Payment, Session, and Notification services. Implemented CQRS with Redis caching and event-driven architecture using RabbitMQ for asynchronous workflows. Secured platform using JWT, OAuth, and OTP authentication.",

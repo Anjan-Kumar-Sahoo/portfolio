@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ProjectType } from '../types';
-import { HiSparkles, HiCpuChip, HiChartBar, HiCodeBracketSquare } from 'react-icons/hi2';
+import { HiSparkles, HiCpuChip, HiChartBar, HiCodeBracketSquare, HiShieldCheck, HiServerStack, HiCommandLine } from 'react-icons/hi2';
 
 interface ProjectCardProps {
   project: ProjectType;
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   const mainPoint = points.length > 0 ? points[0] + '.' : 'Production-ready software component';
   const subPoints = points.slice(1);
 
-  const icons = [<HiCpuChip className="w-5 h-5" />, <HiChartBar className="w-5 h-5" />, <HiCodeBracketSquare className="w-5 h-5" />];
+  const icons = [<HiShieldCheck className="w-5 h-5" />, <HiServerStack className="w-5 h-5" />, <HiCommandLine className="w-5 h-5" />, <HiCpuChip className="w-5 h-5" />, <HiChartBar className="w-5 h-5" />, <HiCodeBracketSquare className="w-5 h-5" />];
   const colors = ['#00d4ff', '#a855f7', '#22c55e', '#ef4444'];
 
   const imageUrl = PLACEHOLDER_IMAGES[index % PLACEHOLDER_IMAGES.length];
@@ -35,14 +35,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div
       ref={ref}
-      className={`relative mb-20 md:mb-32 w-full flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-10 lg:gap-16 items-center`}
+      className={`relative w-full flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 xl:gap-16 items-center`}
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 0.8 }}
     >
       {/* Info Section */}
       <motion.div
-        className="w-full lg:w-5/12"
+        className="w-full lg:w-[48%] xl:w-[46%]"
         initial={{ opacity: 0, x: isEven ? -40 : 40 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
         transition={{ delay: 0.3, duration: 0.6 }}
@@ -112,7 +112,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           ))}
         </div>
 
-        <div className="flex gap-4 mt-8">
+        <div className="flex flex-wrap gap-4 mt-8">
           {project.github && (
             <a
               href={project.github}
@@ -135,12 +135,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               Live Demo
             </a>
           )}
+          {project.extraLinks?.map((extra) => (
+            <a
+              key={extra.label}
+              href={extra.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-full glass text-sm font-semibold hover:border-cyan-400 border border-transparent transition-colors"
+              style={{ color: 'var(--neon-cyan)' }}
+            >
+              {extra.label}
+            </a>
+          ))}
         </div>
       </motion.div>
 
       {/* Mockup Section */}
       <motion.div
-        className="relative w-full lg:w-7/12 group cursor-pointer mt-8 lg:mt-0"
+        className="relative w-full lg:w-[52%] xl:w-[54%] group cursor-pointer mt-8 lg:mt-0"
         initial={{ opacity: 0, x: isEven ? 40 : -40 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
         transition={{ delay: 0.5, duration: 0.7 }}

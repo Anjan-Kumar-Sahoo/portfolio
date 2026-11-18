@@ -16,22 +16,22 @@ const Home: React.FC = () => {
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
   return (
-    <section 
+    <section
       ref={containerRef}
-      id="home" 
+      id="home"
       className="relative min-h-[110vh] flex items-center justify-center overflow-hidden py-20"
     >
       {/* Background Layer */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[#050816] transition-colors duration-500" />
         <div className="absolute inset-0 opacity-30">
-          <motion.div 
+          <motion.div
             style={{ y: useTransform(scrollYProgress, [0, 1], [0, -100]) }}
-            className="absolute top-20 left-[10%] w-96 h-96 bg-cyan-500/20 rounded-full blur-[100px] animate-pulse" 
+            className="absolute top-20 left-[10%] w-96 h-96 bg-cyan-500/20 rounded-full blur-[100px] animate-pulse"
           />
-          <motion.div 
+          <motion.div
             style={{ y: useTransform(scrollYProgress, [0, 1], [0, 100]) }}
-            className="absolute bottom-20 right-[15%] w-[30rem] h-[30rem] bg-purple-500/10 rounded-full blur-[120px]" 
+            className="absolute bottom-20 right-[15%] w-[30rem] h-[30rem] bg-purple-500/10 rounded-full blur-[120px]"
           />
         </div>
         {/* Grid Pattern */}
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <motion.div 
+        <motion.div
           style={{ y, opacity: 1, scale: 1 }}
           className="flex flex-col items-center text-center max-w-5xl mx-auto"
         >
@@ -52,17 +52,17 @@ const Home: React.FC = () => {
           >
             <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 blur-2xl opacity-20 animate-pulse" />
             <div className="w-[160px] h-[160px] md:w-[250px] md:h-[250px] rounded-full border-2 border-white/20 p-2 glass relative z-10 overflow-hidden group flex-shrink-0">
-              <motion.img 
-                src={userData.image} 
-                alt={userData.name} 
+              <motion.img
+                src={userData.image}
+                alt={userData.name}
                 className="w-full h-full object-cover rounded-full transition-transform duration-700 group-hover:scale-110"
               />
             </div>
           </motion.div>
-          
+
           {/* Main Content */}
           <div className="space-y-6">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
@@ -71,25 +71,25 @@ const Home: React.FC = () => {
               Hi, I'm {userData.name}
             </motion.h2>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
               className="text-4xl md:text-8xl font-black tracking-tighter text-white"
             >
-              Software <span className="neon-text">Engineer</span>
+              Ai Full Stack <span className="neon-text">Developer</span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
               className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed px-4"
             >
-              Building robust, scalable backends and intelligent full-stack systems.
+              Architecting intelligent, production-grade backends, AI-powered applications, and resilient cloud systems.
             </motion.p>
           </div>
-          
+
           {/* Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -111,25 +111,25 @@ const Home: React.FC = () => {
             </a>
 
             <div className="flex items-center gap-4">
-               {[
-                 { icon: <Github size={22} />, link: userData.github },
-                 { icon: <Linkedin size={22} />, link: userData.linkedin },
-                 { icon: <Mail size={22} />, link: `mailto:${userData.email}` }
-               ].map((social, i) => (
-                 <motion.a
-                   key={i}
-                   href={social.link}
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   whileHover={{ y: -5, scale: 1.1 }}
-                   className="p-3 rounded-full glass border border-white/5 text-gray-400 hover:text-white transition-colors hover:border-white/20"
-                 >
-                   {social.icon}
-                 </motion.a>
-               ))}
+              {[
+                { icon: <Github size={22} />, link: userData.github },
+                { icon: <Linkedin size={22} />, link: userData.linkedin },
+                { icon: <Mail size={22} />, link: `mailto:${userData.email}` }
+              ].map((social, i) => (
+                <motion.a
+                  key={i}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -5, scale: 1.1 }}
+                  className="p-3 rounded-full glass border border-white/5 text-gray-400 hover:text-white transition-colors hover:border-white/20"
+                >
+                  {social.icon}
+                </motion.a>
+              ))}
             </div>
           </motion.div>
-          
+
           {/* Scroll Hint */}
           <motion.div
             initial={{ opacity: 0 }}

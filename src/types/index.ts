@@ -10,12 +10,18 @@ export interface SkillType {
   backgroundUrl: string;
 }
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface ProjectType {
   title: string;
   description: string;
   technologies: string[];
   github?: string;
   live?: string;
+  extraLinks?: ProjectLink[];
 }
 
 export interface InternshipType {
