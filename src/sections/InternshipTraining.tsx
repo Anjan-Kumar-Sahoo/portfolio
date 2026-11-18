@@ -40,10 +40,10 @@ const InternshipTraining: React.FC = () => {
       </motion.div>
 
       {/* Horizontal timeline */}
-      <div className="relative max-w-6xl mx-auto px-4">
+      <div className="relative w-full px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 2xl:px-20 mx-auto">
         {/* Line */}
         <motion.div
-          className="absolute top-[60px] left-0 right-0 h-[2px] hidden lg:block"
+          className="absolute top-[60px] left-8 right-8 xl:left-20 xl:right-20 h-[2px] hidden lg:block"
           style={{
             background:
               'linear-gradient(90deg, transparent, rgba(0,212,255,0.3), rgba(168,85,247,0.3), transparent)',
@@ -53,7 +53,7 @@ const InternshipTraining: React.FC = () => {
           transition={{ duration: 1, ease: 'easeOut' }}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 lg:pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8 relative z-10 lg:pt-4">
           {trainings.map((item, i) => {
             const Icon = ICONS[i % ICONS.length];
             const color = COLORS[i % COLORS.length];

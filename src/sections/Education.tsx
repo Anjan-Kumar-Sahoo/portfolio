@@ -34,12 +34,12 @@ const Education: React.FC = () => {
       {/* Decorative Gradient */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
       
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 max-w-7xl">
+      <div className="w-full px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={isInView ? { opacity: 1, y: 0 } : {}}
            transition={{ duration: 0.6 }}
-           className="text-center mb-20"
+           className="text-center mb-16 md:mb-20"
         >
           <span className="text-sm font-medium tracking-[0.4em] text-purple-400 uppercase mb-4 block">Academic Foundation</span>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6">Educational <span className="neon-text">Journey</span></h2>
@@ -52,10 +52,10 @@ const Education: React.FC = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12 w-full max-w-6xl mx-auto"
         >
           {education.map((edu, index) => (
-            <motion.div key={index} variants={itemVariants} className="w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)]">
+            <motion.div key={index} variants={itemVariants} className="w-full">
               <EducationCard 
                 education={edu} 
                 index={index} 

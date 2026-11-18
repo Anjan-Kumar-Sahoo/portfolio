@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
       {/* Background Accent */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-cyan-500/5 blur-[120px] pointer-events-none" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="w-full px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
         <div className="text-center mb-16">
           <span className="text-sm font-medium tracking-[0.4em] text-cyan-400 uppercase mb-4 block">Let's Connect</span>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6">Get In <span className="neon-text">Touch</span></h2>
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 w-full max-w-7xl mx-auto">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

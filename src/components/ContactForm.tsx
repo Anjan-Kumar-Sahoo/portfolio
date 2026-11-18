@@ -1,8 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ContactFormData } from '../types';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+
+const WEB3FORMS_ACCESS_KEY = "0b69fa19-ab2f-431f-b379-7034f1e340cb";
 
 const initialFormState: ContactFormData = {
   name: '',
@@ -17,7 +18,6 @@ const ContactForm: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,7 +25,7 @@ const ContactForm: React.FC = () => {
     setError('');
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!formData.email || !formData.message) {
@@ -37,19 +37,26 @@ const ContactForm: React.FC = () => {
     setError('');
 
     try {
-      await emailjs.sendForm(
-        'service_ntz9qj8',
-        'template_qrfpnrq',
-        formRef.current!,
-        '3PfOPcDOI86OU-lBM'
-      );
+      const data = new FormData(e.currentTarget);
+      data.append("access_key", WEB3FORMS_ACCESS_KEY);
 
-      setSubmitted(true);
-      setLoading(false);
-      setFormData(initialFormState);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data,
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitted(true);
+        setFormData(initialFormState);
+      } else {
+        setError(result.message || 'Failed to send message. Please try again.');
+      }
     } catch (err) {
-      console.error('EmailJS Error:', err);
-      setError('Failed to send message. Please try again.');
+      console.error('Web3Forms Error:', err);
+      setError('Something went wrong. Please check your connection and try again.');
+    } finally {
       setLoading(false);
     }
   };
@@ -88,7 +95,7 @@ const ContactForm: React.FC = () => {
               Message Sent!
             </h3>
             <p className="text-gray-400 mb-8 max-w-sm mx-auto">
-              Thank you for reaching out. I've received your message and will respond shortly.
+              Thank you for reaching out. Your message has been sent successfully via Web3Forms and I will respond shortly.
             </p>
             <button
               onClick={resetForm}
@@ -98,7 +105,7 @@ const ContactForm: React.FC = () => {
             </button>
           </motion.div>
         ) : (
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label 
