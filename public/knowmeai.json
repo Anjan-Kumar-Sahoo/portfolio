@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "format": "Agent-Readable Profile & Portfolio Manifest",
+    "schemaVersion": "1.0.0",
+    "generatedFor": "AI Agents, LLMs, Web Crawlers, Recruiters, and Automated Evaluators",
+    "canonicalUrl": "https://portfolio.mraks.dev/knowmeai",
+    "portfolioUrl": "https://portfolio.mraks.dev",
+    "lastUpdated": "2026-11-19"
+  },
+  "person": {
+    "name": "Anjan Kumar Sahoo",
+    "preferredName": "Mr. Aks",
+    "role": "AI Full Stack Developer & Software Engineer",
+    "tagline": "Building robust, scalable backends, zero-knowledge architectures, and intelligent full-stack AI systems.",
+    "bio": "AI Full Stack Developer and Software Engineer specializing in scalable microservices, intelligent full-stack systems, zero-knowledge architectures, and LLM integrations. Passionate about writing clean code, high-throughput APIs, and solving complex problems with 250+ LeetCode milestones.",
+    "location": "India",
+    "contact": {
+      "email": "askmraks@gmail.com",
+      "github": "https://github.com/Anjan-Kumar-Sahoo",
+      "linkedin": "https://linkedin.com/in/aks1097",
+      "resumeUrl": "https://drive.google.com/file/d/11Ur9L2CGHGH9K0NHzPQ7Q9SnHXHxo6co/view?usp=sharing",
+      "contactFormApi": "https://api.web3forms.com/submit"
+    }
+  },
+  "highlights": [
+    "AI Full Stack Developer and Software Engineer specializing in scalable Spring Boot microservices and modern React architectures.",
+    "250+ LeetCode milestones demonstrating strong algorithmic problem-solving and Data Structures & Algorithms proficiency.",
+    "Zero-knowledge architecture design with client-side AES-256-GCM encryption and PBKDF2 key derivation (Secure Save).",
+    "Microservice distributed systems architecture with CQRS, Redis caching, RabbitMQ event streams, and AWS EC2 deployments.",
+    "Automated CI/CD workflows across GitHub Actions, Docker Compose, Vercel, and native Android Gradle compilation."
+  ],
+  "technicalSkills": [
+    "Java",
+    "Spring Framework",
+    "Spring Boot 3",
+    "Microservices",
+    "React 18",
+    "Redux",
+    "Node.js & Express",
+    "TypeScript",
+    "Python",
+    "Claude AI",
+    "GitHub Copilot",
+    "Codex & LLMs",
+    "FreeLLM & GenAI",
+    "Docker",
+    "AWS EC2",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB Atlas",
+    "Redis",
+    "RabbitMQ",
+    "Git & GitHub",
+    "CI/CD (GitHub Actions)",
+    "Postman",
+    "Angular",
+    "C++ & Core CS",
+    "HTML5/CSS3",
+    "Tailwind CSS"
+  ],
+  "softSkills": [
+    "Communication",
+    "Problem Solving",
+    "Teamwork",
+    "Leadership",
+    "Time Management"
+  ],
+  "projects": [
+    {
+      "title": "Secure Save – Personal Vault",
+      "subtitle": "Zero-Knowledge Personal Vault & Mobile Ecosystem",
+      "category": "Featured Project",
+      "architecturalTagline": "Architected a production-grade, zero-knowledge security platform featuring client-side AES-256-GCM encryption, a stateless Node.js serverless API on Vercel, MongoDB Atlas encrypted document storage, a React 18 3D interactive WebApp, and automated Capacitor Android CI/CD.",
+      "engineeringHighlights": [
+        "Zero-Knowledge Cryptography: Implemented client-side AES-256-GCM authenticated encryption with 96-bit initialization vectors (IVs) and PBKDF2 (SHA-256) local key derivation; ciphertext-only transport guarantees the backend and database persist zero plaintext secrets.",
+        "Backend Engineering & Edge Security: Designed a high-throughput serverless REST API on Vercel Edge with reverse proxy trust, strict CORS firewall whitelisting, express-rate-limit brute-force mitigation, and Nodemailer SMTP delivery with 5-minute MongoDB TTL auto-purging OTP challenges.",
+        "DevOps & Multi-Platform CI/CD: Built an automated GitHub Actions CI/CD matrix compiling native Android debug APKs with Gradle 8, auto-publishing rolling release assets via softprops/action-gh-release, and syncing static builds across Capacitor and Vercel edge networks."
+      ],
+      "technologies": [
+        "Node.js",
+        "Express",
+        "TypeScript",
+        "React 18",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Capacitor 6",
+        "Android Keystore",
+        "MongoDB Atlas",
+        "AES-256-GCM",
+        "Vercel Serverless",
+        "GitHub Actions",
+        "Nodemailer"
+      ],
+      "links": {
+        "github": "https://github.com/Anjan-Kumar-Sahoo/Secure-Save",
+        "live": "https://securesave.mraks.dev",
+        "docs": "https://securesave.mraks.dev/docs",
+        "apkDownload": "https://github.com/Anjan-Kumar-Sahoo/Secure-Save/releases/download/latest/securesave.apk"
+      }
+    },
+    {
+      "title": "SkillSync – Peer-to-Peer – Learning Platform",
+      "category": "Featured Project",
+      "description": "Architected a production-grade platform with 9 Spring Boot microservices on AWS EC2 and a React 18 + TypeScript frontend on Vercel. Enabled role-based dashboards for Learner, Mentor, and Admin supporting mentor discovery and session workflows. Designed RESTful APIs across User, Auth, Payment, Session, and Notification services. Implemented CQRS with Redis caching and event-driven architecture using RabbitMQ for asynchronous workflows. Secured platform using JWT, OAuth, and OTP authentication.",
+      "technologies": [
+        "Spring Boot 3",
+        "Microservices",
+        "React",
+        "TypeScript",
+        "Redux",
+        "MySQL",
+        "Redis",
+        "RabbitMQ",
+        "Docker",
+        "AWS EC2",
+        "Vercel"
+      ],
+      "links": {
+        "github": "https://github.com/Anjan-Kumar-Sahoo/SkillSync",
+        "live": "https://skillsync.mraks.dev"
+      }
+    },
+    {
+      "title": "Godamm – Inventory Command Center",
+      "category": "Production Platform",
+      "description": "Architected a multi-tenant inventory management platform with a Spring Boot backend and React 18 + TypeScript frontend deployed on AWS EC2 + Vercel, ensuring scalability. Designed and implemented 23+ RESTful APIs for product catalogue, supplier management, sales processing, and user authentication using Spring Boot Bean Validation at every endpoint. Delivered real-time stock tracking and atomic sales transaction processing using Spring Data JPA + MySQL. Integrated Redis caching on high-frequency read paths. Built React analytics dashboard with interactive profit charts and low-stock alert indicators. Secured with JWT stateless authentication and automated deployments using Docker Compose, Nginx, and GitHub Actions CI/CD.",
+      "technologies": [
+        "Spring Boot",
+        "React 18",
+        "TypeScript",
+        "MySQL",
+        "Redis",
+        "Docker",
+        "AWS EC2",
+        "Vercel"
+      ],
+      "links": {
+        "github": "https://github.com/Anjan-Kumar-Sahoo/Inventory-Management",
+        "live": "https://godamm.mraks.dev"
+      }
+    },
+    {
+      "title": "Garage Management System",
+      "category": "Enterprise Application",
+      "description": "Developed an end-to-end garage management platform handling customers, vehicles, services, invoices, and payments. Architected REST API layer supporting vehicle servicing and billing operations. Integrated Spring Security authentication with protected endpoints and session management. Designed an analytics dashboard showing revenue trends, customer insights, and operational metrics.",
+      "technologies": [
+        "Spring Boot",
+        "React",
+        "MySQL",
+        "Spring Data JPA",
+        "Spring Security",
+        "REST API"
+      ],
+      "links": {
+        "github": "https://github.com/Anjan-Kumar-Sahoo/GarageMS"
+      }
+    }
+  ],
+  "trainingsAndCertifications": [
+    {
+      "title": "Java Backend Development",
+      "organization": "Hitbullseye",
+      "duration": "Jan 2025",
+      "points": [
+        "Designed REST APIs and integrated MySQL using microservices concepts and enterprise-grade CRUD architecture.",
+        "Acquired practical knowledge of Java backend designing and integration of databases in structured apps."
+      ]
+    },
+    {
+      "title": "Python Full Stack Development",
+      "organization": "CipherSchools",
+      "duration": "Jun 2025",
+      "certificate": "https://cipher-other-assets.s3.ap-south-1.amazonaws.com/certificates/TC_aksahoo1097%40gmail.com_CS2025-14504",
+      "points": [
+        "Built end-to-end Django applications integrating databases, user authentication, and responsive UI components.",
+        "Applied Python frameworks to construct web apps, integrating databases and responsive interface components."
+      ]
+    },
+    {
+      "title": "Competitive Programming",
+      "organization": "Programming Pathshala",
+      "duration": "Mar 2025",
+      "points": [
+        "Strengthened algorithmic thinking and debugging through structured challenges and optimised solution design.",
+        "Refined debugging and logical reasoning, optimizing performance in complex programming tasks and contests."
+      ]
+    },
+    {
+      "title": "Logic Building & DSA with Java",
+      "organization": "SkillDev, LPU",
+      "duration": "Aug 2024",
+      "certificate": "https://files.lpu.in/umsweb/skilldevcourse/SkillDevelopmentCertificates/12216014_459_08_15_2024.pdf?_gl=1*t43zh3*_gcl_au*Nzg0ODE0OTgyLjE3NTI1NzMxNjUuNzkzMDk1OTU5LjE3NTI1NzMxNzcuMTc1MjU3MzIzMw..",
+      "points": [
+        "Mastered DSA in Java with focus on time/space complexity and optimised implementations.",
+        "Strengthened analytical problem-solving using Java and DSA concepts with focus on optimized algorithms."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lovely Professional University",
+      "degree": "B.Tech — Computer Science & Engineering",
+      "duration": "2022 — 2026",
+      "score": "CGPA: 7.66"
+    },
+    {
+      "institution": "St. Paul's School",
+      "degree": "Intermediate (I.S.C) & Matriculation (I.C.S.E)",
+      "duration": "2020 — 2022",
+      "score": "12th: 71% ; 10th: 82%"
+    }
+  ]
+}

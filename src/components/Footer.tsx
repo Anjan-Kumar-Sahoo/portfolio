@@ -18,6 +18,14 @@ const Footer: React.FC = () => {
             <span className="text-gray-400">Made with</span>
             <Heart size={16} className="mx-1 text-red-500" />
             <span className="text-gray-400">by Anjan Kumar Sahoo</span>
+            <span className="mx-2 text-gray-600">|</span>
+            <a 
+              href="/knowmeai" 
+              className="text-xs text-cyan-400 hover:text-cyan-300 font-mono tracking-wider flex items-center gap-1 transition-colors"
+              title="Agent-readable portfolio manifest"
+            >
+              /knowmeai
+            </a>
           </div>
         </div>
       </div>

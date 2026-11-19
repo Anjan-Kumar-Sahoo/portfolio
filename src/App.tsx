@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
@@ -9,8 +10,24 @@ import SoftSkills from './sections/SoftSkills';
 import Education from './sections/Education';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
+import KnowMeAI from './pages/KnowMeAI';
 
 function App() {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname.toLowerCase());
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      setCurrentPath(window.location.pathname.toLowerCase());
+    };
+
+    window.addEventListener('popstate', handleLocationChange);
+    return () => window.removeEventListener('popstate', handleLocationChange);
+  }, []);
+
+  if (currentPath === '/knowmeai' || currentPath === '/knowmeai/' || currentPath === '/knowmeai.json') {
+    return <KnowMeAI />;
+  }
+
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
